@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Dog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Future Considerations
+
+Unfortunately I didn't have enough time to get around to everything,
+the following are my considerations.
+
+- Filter for duplicate images while fetching dog images.
+- Potentially filter our mp4 as was unsure if mp4 met requirement.
+- Ability to click to remove favorite on home page, currently just add.
+- Add more tests, having little react experience, I had to learn as much as I could
+  to get the main requirements done. I manually tested it, but I would add many more tests.
 
 ## Available Scripts
 
@@ -39,8 +50,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
