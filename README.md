@@ -17,7 +17,7 @@ experience with react, the following are my considerations for the future;
 - Ability to click to remove favorite on home page, currently just add.
 - Add more tests, having little react experience, I had to learn as much as I could
   to get the main requirements done. I manually tested it, but I would add many more tests.
-- Tidy up code into more functions to render JSX if I had more time.
+- Tidy up code into smaller functions to render JSX if I had more time.
 
 ## How to Run
 
