@@ -5,7 +5,6 @@ import Favorites from "./Favorites";
 
 function App() {
     const [dogs, setDogs] = useState<Dog[]>([])
-    const [error, setError] = useState({})
     const [favorites, setFavorites] = useState<string[]>([])
 
     interface Dog {
@@ -23,10 +22,6 @@ function App() {
                 Array.from({length: count}, () => fetch("https://random.dog/woof.json"))
             );
             const dogResponse = await Promise.all(response.map(response => response.json()))
-                .catch(error => {
-                    setError(error);
-                    return []
-                })
             console.log(dogResponse);
             setDogs(dogResponse);
         } catch (e) {
@@ -58,19 +53,20 @@ function App() {
     return (
         <Router>
             <div className="app">
+                <h1>Dog Gallery</h1>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/favorites">Favorites</Link>
+                            <Link className="nav-link" to="/favorites">Favorites</Link>
                         </li>
                     </ul>
                 </nav>
                 <Switch>
                     <Route exact path="/">
-                        <h1>Dog Gallery</h1>
+                        <h2>Dogs</h2>
                         <div className="media-container">
                             {dogs.length > 0 ? (
                                 dogs.map((dog, index) => (

@@ -19,7 +19,7 @@ function Favorites() {
 
     return (
         <div className="app">
-            <h1>Dog Gallery</h1>
+            <h2>Favorites</h2>
             <div className="media-container">
                 {favorites.length > 0 ? (
                     favorites.map((favorite, index) => (

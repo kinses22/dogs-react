@@ -1,19 +1,20 @@
 # Dog App
 
-
+A React application to display dogs and be able to favorite them for viewing on another page.
 
 ## Future Considerations
 
-Unfortunately I didn't have enough time to get around to everything,
-the following are my considerations.
+Unfortunately I didn't have enough time to get around to everything and had no previous
+experience with react, the following are my considerations for the future;
 
+- 
 - Filter for duplicate images while fetching dog images.
-- Potentially filter our mp4 as was unsure if mp4 met requirement.
+- Potentially filter out mp4 as I was unsure if mp4 met requirement.
 - Ability to click to remove favorite on home page, currently just add.
 - Add more tests, having little react experience, I had to learn as much as I could
   to get the main requirements done. I manually tested it, but I would add many more tests.
 
-## Available Scripts
+## How to Run
 
 In the project directory, you can run:
 
@@ -24,29 +25,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
