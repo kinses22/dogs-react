@@ -5,7 +5,6 @@ import Favorites from "./Favorites";
 
 function App() {
     const [dogs, setDogs] = useState<Dog[]>([])
-    const [favorites, setFavorites] = useState<string[]>([])
 
     interface Dog {
         url: string
@@ -34,18 +33,16 @@ function App() {
     }
 
     const handleFavorite = (dogUrl: string) => {
-        let storedFavorites;
+        let storedFavorites: string[];
         if (localStorage.getItem("favorites") !== null) {
             storedFavorites = JSON.parse(localStorage.getItem('favorites') as string)
             const existsFavorite = storedFavorites.some
             ((favorite: string | string[]) => favorite.includes(dogUrl));
             if (!existsFavorite) {
-                setFavorites((prevFavorites) => [...prevFavorites, dogUrl]);
-                localStorage.setItem('favorites', JSON.stringify([...favorites, dogUrl]));
+                localStorage.setItem('favorites', JSON.stringify([...storedFavorites, dogUrl]));
             }
         } else {
-            setFavorites((prevFavorites) => [...prevFavorites, dogUrl]);
-            localStorage.setItem('favorites', JSON.stringify([...favorites, dogUrl]));
+            localStorage.setItem('favorites', JSON.stringify([dogUrl]));
         }
     };
 
